@@ -1,0 +1,19 @@
+President,AD_PRES,40000
+Administration Vice President,AD_VP,30000
+Administration Assistant,AD_ASST,6000
+Finance Manager,FI_MGR,16000
+Accountant,FI_ACCOUNT,9000
+Accounting Manager,AC_MGR,16000
+Public Accountant,AC_ACCOUNT,9000
+Sales Manager,SA_MAN,20080
+Sales Representative,SA_REP,12008
+Purchasing Manager,PU_MAN,15000
+Purchasing Clerk,PU_CLERK,5500
+Stock Manager,ST_MAN,8500
+Stock Clerk,ST_CLERK,5000
+Shipping Clerk,SH_CLERK,5500
+Programmer,IT_PROG,10000
+Marketing Manager,MK_MAN,15000
+Marketing Representative,MK_REP,9000
+Human Resources Representative,HR_REP,9000
+Public Relations Representative,PR_REP,10500

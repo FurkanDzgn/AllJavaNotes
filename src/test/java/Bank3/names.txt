@@ -1,0 +1,60 @@
+Don Wheeler,1900,chicago
+Salvatore Williams,4000,new york
+Terry Harvey,565,chicago
+Johnny Valdez,8999,san francisco
+Henry Holloway,2000,los angeles
+Joseph Todd,55000,atlanta
+Jeanette Hopkins,2000,seattle
+Ramiro Goodman,3222,chicago
+Neal Boone,3678,chicago
+Eddie Berry,3222,new york
+Spencer Flores,200,pittsburgh
+Juan Wilkins,9000,seattle
+Roger Alvarez,3222,chicago
+Joann Scott,7000,los angeles
+Guadalupe Manning,100,los angeles
+Oliver Stephens,2777,chicago
+Wendell Hamilton,900,seattle
+Minnie Erickson,433,los angeles
+Charles Hanson,567,chicago
+Samuel Alvarado,9000,atlanta
+Adam Rodgers,10000,los angeles
+Tyrone Stone,4000,chicago
+Simon Adams,55000,atlanta
+Myra Lyons,1000,los angeles
+Alan Stanley,2000,atlanta
+Samantha Delgado,24000,chicago
+Tara Howard,250000,chicago
+Wanda Santiago,12000,atlanta
+Geoffrey Evans,56000,seattle
+Roosevelt Valdez,540000,los angeles
+Vernon Fowler,7000,los angeles
+Tammy Boone,5000,seattle
+Janice Vega,5,los angeles
+Sabrina Wood,1,chicago
+Kelley Moss,55,chicago
+Gina Patrick,8777,chicago
+Don Armstrong,90000,los angeles
+Christopher Diaz,880,seattle
+Christina Ramirez,80000,seattle
+Paulette Newman,445,seattle
+Freddie Andrews,7,los angeles
+James Brock,89000,chicago
+Anna Dennis,300,atlanta
+Christine Schmidt,12000,chicago
+Diana Hall,459,chicago
+Louise Bryant,580,los angeles
+Carla Curry,24,atlanta
+Donna Fitzgerald,555,atlanta
+Irma Clark,71,atlanta
+Patrick Norris,89,seattle
+Pete Daniel,1000000,chicago
+Jasmine Snyder,25000,los angeles
+Gerald Wade,50000,chicago
+Jean Chapman,354,chicago
+Neal Boone,3678,chicago
+Anna Dennis,300,atlanta
+Carla Curry,24,atlanta
+Paulette Newman,445,seattle
+Irma Clark,71,atlanta
+Jasmine Snyder,25000,los angeles

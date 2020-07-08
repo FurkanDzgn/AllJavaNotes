@@ -1,0 +1,13 @@
+Task 1 steps:
+
+1) Please go to AccountInfo class and create four instance variable: String name,
+   String lastName, Integer balance, String city.
+
+2) Initialize variables in four parameters constructor: 
+   String name, String lastName, Integer balance, String city.
+
+3) in toString() method return String with value: 
+   name lastName,balance,city 
+   (same as this format)
+
+4) Run test class and make sure testTask1() method is passed

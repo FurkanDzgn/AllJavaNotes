@@ -1,0 +1,2811 @@
+Day07
+Warm up
+
+Write a program that will ask for three numbers
+Then ask a user to find the sum result of those numbers
+If the answer is correct then print true,otherwise false
+Example:
+    Pleaseenter three numbers:
+    2
+    4
+    5
+    What is the result?
+    10
+    false! then sum is: 11
+
+------------------------
+
+data types:
+    primetives
+    String
+varibale
+++ --
+
+
+
+
+primitive data type:
+
+          boolean(true or false)
+          byte(-128 127)
+          short ()
+          char -> characters 'A'->65 'a'->97 , 'b'->98, 'c'->98 // under the characters are numbers at ASCII
+          int -> whole number int num = 1; 20bits
+          long ->
+          float ->decimal number float f = 1.0f; 200bits
+          double
+
+
+------------------
+
+How to create methods
+
+public void myMetdhod(String name){
+	System.out.println("Hello "+name);
+}
+
+public -> Access modifier , public accessible everywhere
+void -> return type -> String, int, double, boolean
+void -> it doesnt return any value
+myMethod -> Method name
+String name -> parameter
+
+{ Systme.out.println("Hello "+name);} -> methods body
+
+myMethod(String name) -> method signature
+
+In order to use created methods we have to create an object
+Student student = new Student();
+
+---------
+
+instance variables
+That are craeted in class level and can be accessed from anywhere within the class.
+
+local Variable
+Local variable can not be used or accessed outside of method
+
+Creating an Object
+Person person = new Person();
+
+Person person ; //
+
+
+----------------
+
+CLASS vs OBJECT
+
+1) Class is just template/ general idea
+     ---> Attributes / fields / Instance Variables
+          Student class ->  name
+                        ->  gender
+                        ->  studentId
+     --->Methods / Behaviour / Actions
+         Student Class -> study()
+                       -> attend()
+                       -> learn()
+
+2) Object is created/comes from class
+ -> We can create multiple objects
+
+ Student student = new Student();
+ Student student2 = new Student();
+ Student student3 = new Student();
+ Student student4 = new Student();
+ ..........
+
+ When we create an object we can give attributes and actions to this object
+
+ 1)Giving an Attributes -> Instance Variables
+
+ student1.name = "Kumar";
+ student1.studentId = 101;
+ student.gender = 'M';
+
+ 2.Calling a behaviour of object -> Calling Methods
+
+ student1.study();
+ student1.attend();
+ student1.learn("Patel");
+ student1.work("SDET");
+
+------------
+
+1.Instance Variables
+
+-Instance variables are created on class level
+-We can access to instance variables within class methods
+
+2.Local Variables
+
+-Local variables are created inside of methods
+-Methods parameters are local variables as well -> public void myMethod(String name){}
+-Local variables can be used only within body(scope) of methods
+-We can not use local variables outside of method body
+
+---------
+
+Method / behaviour / actions / functions
+Variables / fileds / attributes
+
+-----All these are called Member of class
+
+What are the members of class?
+a)Methods -> true
+b)Access modifies
+c)return type
+d)Variables -> true
+e)Fields
+
+
+Person
+
+Attributes
+------
+name
+age
+gender
+position
+salry
+
+Behaviours
+-----
+study()
+work()
+swim()
+bike()
+talk()
+read()
+
+-------------------
+
+String -> regular class in java
+
+String name = "techtorial";
+
+String name = new String("Techtorial");
+
+String methods:
+
+.toUpperCase();
+.toLowerCase();
+.indexOf(char character); -> return int
+.charAt(int index) -> return char;
+.length() -> return int;
+.equals(String value) ->return boolean;
+.concat(String value) -> return String;
+.trim() -> return String;
+.replace(String param1,String param2) -> return String;
+.substring(int startIndex) -> return String;
+.substring(int startIndex, int endIndex) -> return String;
+.startWith(String value)
+.endsWith(String value)
+
+Scanner input = new Scanner(System.in);
+
+// methods
+.next()
+.nextLine()
+.nextInt()
+.nextDouble()
+.nextFloat()
+....
+
+--------------
+
+if (classCapacity >= studentNumber) {
+		System.out.println("You can join the class");
+	} else {
+		System.out.println("You can not join the class.");
+	}
+
+	if -> keyword
+	   (classCapacity >= studentNumber) -> condition
+
+
+{
+		System.out.println("You can join the class"); -> body of if statement
+	}
+
+
+else -> reversed keyword
+
+{
+		System.out.println("You can not join the class."); -> body of else statement
+	}
+
+
+-------------
+
+Class -> class is template / general idea
+
+Object -> object is created out of class, it create some memory in Heap
+
+Instance Variable -> is variable that created in class level, and can be accessed withing the class
+
+Local Variable -> Method parameter and variables that are created inside of method.They can be accessed only within the method.They can not be accessed outside of method.
+
+if/else -> if you want to put some conditions you can use if/else statement.
+
+Next class:
+
+Recap the objects,and learn more about if/else
+
+after that
+
+loops
+
+
+-------------
+Day10
+
+Switch statements will accpet only below data types:
+byte
+char
+short
+int
+String
+
+default -> keyword in switch statement means same as else in if/else statement.And default can come anywhere in  switch statement.
+
+break -> will default can come anywhere in switch statement.
+
+Ternary operator:
+
+(5>4) ? "Right" : "Wrong";
+
+(5>4) -> Condition true/false
+
+"Right" -> Expression1 -> which will be executed if Condition is true
+
+"Wrong" -> Expression2 -> which will be executed if Condition is false
+
+----------
+Loops
+Do While Loop -> It executes the code then checks the condition.
+
+While loop-> Will check the condition first and if it is true it will execute the code
+
+ For loop ->
+—————
+Conditional Statement:
+  If/Else Statement
+  Switch statement
+  Ternary operators
+ ---------------------
+ day12
+
+ For loops:
+ --------
+
+ For loops will have three parts
+
+ 1.Initialization
+ 2.Condition
+ 3.Uptade Statement
+
+ Steps how for loops runs:
+ 1.Initialization
+ 2.Condition(if true it will continue, if false it will terminate the loop)
+ 3.It will execute the body of for loop
+ 4.Uptade Statement
+
+ 2.Condition(if true it will continue, if false it will terminate the loop)
+ 3.It will execute the body of for loop
+ 4.Uptade Statement
+
+ 2.Condition(if true it will continue, if false it will terminate the loop)
+ 3.It will execute the body of for loop
+ 4.Uptade Statement
+
+ 2.Condition(if true it will continue, if false it will terminate the loop)
+ 3.It will execute the body of for loop
+ 4.Uptade Statement
+
+ 2.Condition(if true it will continue, if false it will terminate the loop)
+ 3.It will execute the body of for loop
+ 4.Uptade Statement
+ ----------------
+ Initialization, Condition, and Uptade Statement are all optional to provide
+
+ Condition is not provided -> by default it will be true
+
+ ---------
+ Day13
+
+Split or No Split
+
+What is total amount?
+500
+Split or Not Split? Yes/No
+No
+What is your satisfaction?
+Poor %5
+Fair %10
+Good %15
+Great %20
+Excellent %25
+
+Good
+
+Tip amount is: 75
+Your total is: 575
+
+
+What is total amount?
+500
+Split or Not Split? Yes/No
+Yes
+How many people?
+5
+What is your satisfaction?
+Poor %5
+Fair %10
+Good %15
+Great %20
+Excellent %25
+
+Great
+
+Tip amount is: 100
+Your total is: 600
+Number of people: &&&&&
+Tip per person: 20
+Total per person: 120
+
+-------------
+Day14
+
+break -> will terminate the loop(If it is nested loop, then it will terminate the inner loop)
+
+continue -> will skip the current iteration, and will continue for next iteration
+
+label -> is defined before loop with colons.If we want to break specific for loop then we can
+provide label and indicate to that label with break statement.'break LABEL;'
+
+if we want to continue from specific loop we can label it and indicate with continue keyword.'continue LABEL;'
+
+break -> can be used with all loops and switch statement
+continue -> can be used only with loops.(do while, while, for loop).
+labels -> can be used in all loops and statements.
+
+Debug Mode -> if we want to go over our code step bt step we can use debug.
+
+------------
+
+SoftSkillLesson
+
+---------
+Day15
+
+int,String,double,boolean -> 5,"Hello",
+
+int[] ->5,6,7,10,2,
+
+int -> primitive variable
+double -> primitive
+
+int[] -> object, array of integer type.We can store to this array only the int numbers
+
+String[] -> array of Stirng type.Stored only type of String values
+
+String word="Java";
+
+--
+
+Arrays
+==
+
+Arrays is fixed size -> you can not change the size of array once it is initialized.
+Arrays can hold duplicates
+
+int -> primitive type
+int[] -> Arrays if int type,object
+
+Arrays is ordered list
+
+
+All these are same :
+int[] nums
+int [] nums
+int nums[]
+int nums []
+
+
+int nums1[],num; ->
+
+nums1[] -> array of int
+num -> primitive int
+
+int a[],b[],c[],d;
+
+a[] -> array of int
+b[] -> array of int
+c[] -> array of int
+d -> primitive int
+
+------
+
+import java.util.Scanner; -> this will import the Scanner class
+
+java.util -> this is the package name
+Scanner -> is a class provided by JDK
+
+import java.util.* -> It will import all classes from java.util package
+
+import java.util.Scanner.* -> This is compilations error
+
+By default java imports java.lang package
+
+java.lang -> String,System,Integer,Double....
+
+-----------
+
+By default String array will have values as null
+
+char -> will have empty values
+
+int -> 0
+
+double -> 0.0
+
+boolean -> false
+
+You can create arrays out of primitives and String,and other custom objects.
+
+String -> was array of char
+
+"Sun" => 's'+'u'+'n';
+
+import the class.
+
+//This is compilation error because we are importing two classes with same name
+
+import java.util.Date;
+import mypackage.Date;
+
+Date
+
+java.util.Date date = new java.util.Date();
+
+mypackage.Date date = new mypackage.Date
+
+------
+
+CodingBat
+
+-----------
+
+Day 16
+
+First it has to be sorted before using binary search.
+Arrays.binarySearch(array, num) -> this method will return the index number of num in sorted array.
+If that number is not in array it will give negative number with added one to index number it has to be on.
+If array is not sorted and we try binarySearch then will get unpredictable negative number for not sorted numbers.
+------
+
+Arrays.sort(array); -> this method will sort an array and store to that array.
+
+sort -> it will order the numbers of characters or string from smallest to largest.
+
+-----------------
+
+MultiDimensional Arrays
+
+Methods
+Constructor
+Stringbuilder
+Static
+Memory -> heap and stack
+Arraylist
+
+-----------------
+Day19
+
+Array
+What is the Array?
+1-Array is an collection type in java
+2-Array is an object. If there is an object you can use new keyword.
+3-We can store Objects(String) and primitive data types
+NOTE:Collection types which we will learn (ArrayList, Set, Map)
+4-Array is fixed size.
+5-We can store dublicate values in array
+6-Array will get default value.
+
+
+int[] num=new int[10];
+What is default value for variables?
+int, short, byte, long, double, float, -> 0, (0.0)
+char -> it will empty space ""
+String -> null. ,Car, Table (All object default value is null)
+boolean -> false
+
+String str="Techtorial";
+char ch='a';
+
+int num=10; --> initialization variable
+=========
+How many ways we can create an Array?
+1-Way
+int [] num = int[100];
+  int [] number; --> Declaring our object
+number=new int[5]; --> instantiation of the object
+NOTE: In this instantiation of the array, we must give the size.
+If you do not give the size, java will give compile time error.
+Compile time error in java mostly because of the syntax problem.
+RunTimeError --> it will happen on runtime.
+
+2-Way
+ int[] num ={1,4,5,6,7}; --> fixed --> size : 5
+ num[10]=41; --> throws an exception on runtime
+
+3-Way
+int[] num= new int[]{1,4,5,6,7}; --> we should not size of array.
+
+***
+int [][] num;
+int [] num[];
+int num[][];
+
+Example 1:
+int [] number[],num;
+num=new int[3]; --> array
+number=new int[2][3] --> two dimensional array
+
+Example 2:
+int number[][],num;
+number is two dimensional array
+num is primitive
+
+Example 3:
+int [][] number,num;
+number is two dimensional array
+num is two dimensional array
+
+String[] names={"Cucumber", "Selenium", "Java"}
+
+1- names[0], names[1], names[2]
+2- We can use the loops (for writing array)
+3- sout(names); --> you will the result is Id(@ma13) of memory location of this array
+4-Arrays.toString(names);[Cucumber, Selenium, Java]
+
+===========
+
+Variable -> Object and primitive data types are variable in java
+primitive -> int, double, float,........
+Note: every primitive data types are variable but every variable is not primitive.
+
+======
+What is the difference between for and foreach loop?
+ForEachLoop
+1-We can use with collection(Array).
+2-for(DataType of array : nameOf Array)
+3-You can only start from beginning and go until end of your collection.
+
+String[] names={"Cucumber", "Selenium", "Java"}
+
+for(String name:names){
+	sout(name);
+}
+
+Using for loop
+
+for(int i=names.length-1; i>=0; i--){
+	sout(names[i]);
+}
+
+for(int i=0; i<names.length; i++){
+	sout(names[i]);
+}
+
+String[][] tools;
+
+tools={{" Plates","Spoon"}, {"Desk","Computer"},{"Shoes","Ball"} };
+tools1={" Plates","Spoon", "Desk","Computer","Shoes","Ball" };
+tools2={{" Plates","Spoon","Glass"}, {"Desk","Computer"},{"Shoes","Ball"} };
+
+tools =new String[3][2];
+tools1=new String[1][6];
+tools2=new String[3][3];
+
+
+for(String [] tool : tools){
+	for(String t : tool){
+	sout(t);
+	//running two times
+	}
+}
+
+for(int i=0; i<tools.length;i++){
+	for(int k=0; k<tools[i].length; k++){
+	     sout(tools[i][k]);
+	}
+}
+
+===============
+
+Sort
+
+NOTE: if youe are sorting the String values, it will sort according to ascii number.
+If you are sorting the number, it will sorting smaller to bigger value, Ascending order.
+
+Arrays.sort(ArrayName);
+
+String [] nums={"13","100","1"};
+
+"1", "100", "13" --> OCA question
+
+int[] numbers={13,100,1};
+
+1, 13, 100
+
+============
+Binary Search
+1-If you are using binary search first you must to sort the array.
+
+String [] nums={"13","100","1"};
+
+Arrays.binarySearch(nameOfArray, value);
+
+Arrays.binarySearch(nums,"100"); --> return type of binary search is index number of value.
+
+2-If you dont sort result is not predictable
+
+Example:
+
+int[] numbers={13,100,1};
+Arrays.sort(numbers);
+sout(Arrays.toString(numbers))
+1, 13, 100
+
+Arrays.binarySearch(numbers, 1); --> index number of 1 is 0
+
+Arrays.binarySearch(numbers, 7); --> -2
+1, 7, 13, 100
+
+Arrays.binarySearch(numbers, 140); -->  -4
+1, 13, 100, 140
+
+Arrays.binarySearch(numbers, 50); -->  -3
+1, 13, 50, 100
+
+Arrays.binarySearch(numbers, -100); -->  -1
+-100, 1, 13, 100
+
+If there no value in array while you are using binary search, it will not give the index number, it will count regularly
+
+1 million of person id
+
+String[] ids={"2354","23456",..........}
+
+ids.length --> this is not method just attribute
+
+1-
+Convert array t String and use String method contains();
+
+2-
+sort the array and use binarySearch if return is less than 0
+
+NOTE: If return type of binarySearch method is minus, the value is not inside teh array.
+
+Linear Search:
+int [] ids= {1,2,3,4,5,6,7,575,7887,324,345,63};
+
+for(int i=0; i<ids.length; i++){
+
+	if(ids[i]==63){
+	sout(i);
+	}
+}
+Linear search will run 13 times to find index number of 63.
+
+
+Binary Search:
+int [] ids= {1,2,3,4,5,6,7,63,324,345,575,7887};
+
+Arrays.binarySearch(ids,7887);
+
+1,2,3,4,5,6,7,63,324,345,575,7887
+
+63,324,345,575,7887
+
+575,7887 --> it will give the index number
+
+**
+
+Arrays.binarySearch(ids,5);
+
+1,2,3,4,5,6,63,324,345,575,7887
+
+1,2,3,4,5,6
+
+4,5,6 --> find the index of 5
+
+Binary Search: it will always divide the element of array two part and will check your value is in the left or rigth side until finding matching element.
+
+
+
+
+
+tools1={" Plates","Spoon", "Desk","Computer","Shoes","Ball" };
+
+
+Ball, Computer, Desk, Plates, Shoes, Spoon
+
+Spoon
+
+Ball, Computer, Desk, Plates, Shoes, Spoon
+
+ Plates, Shoes, Spoon
+
+ Shoes, Spoon --> Binary search will work only three
+
+
+ 1 mill value to find the last value
+
+ Binary search will run
+ 21 times
+
+ Linaer will run 1 mill times
+
+ 2 mil
+ 22times --> Binary search
+
+ linear 2 mil
+
+ ========
+
+ How did you find the largest value from Array?
+
+ int num[]= {4,2,5,7,6,7,10};
+
+ Arrays.sort(num);
+
+ return num[num.length-1];
+
+ =======
+
+ Finding largest value in array without sorting
+
+ 1-Create one int variable
+ 2-Assign first value to your int variable
+ 3-Loop your all the element
+ 4-If the element is bigger than your int variable change value of int variable
+ 5-int variable
+
+ TASK
+ Create the method will take one int array and it will return largest value.
+ Implement the code without sort method.
+
+
+========
+
+/*
+	 * int num[] = {2,4,1,6,5,7};
+	 * find missing number from this array without sorting
+	 *
+	 * 1-create one method will take the parameter as int[]
+	 *
+	 * Formula n*(n+1)/2
+	 *
+	 * 7*8/2 --> it will give you expected sum of this sequence
+	 *  1,2,3,4,5,6,7  -> sum of is equals to 28
+	 *
+	 *  actual sum is equals 25
+	 *  28-25=3 is missing number
+	 *
+	 *
+	 */
+
+
+==========
+Split
+
+Will return array of String
+
+String description="It will give you expected sum of this squance";
+
+String[] arr=description.split(""); --> regex(regular expression)
+
+1-in split(" "); --> it will split with spaces and return String array
+2-split("\\."); -->  it will split with (.) and return String array
+
+=======
+1-Definition of array
+  *multidimentional array
+  *different ways to create array
+2-Sort
+3-Binary Search
+4-Finding missing number without sorting
+5-Largest value
+6-Split
+
+========
+Heap and Stack
+
+Heap -->all object will go to the heap
+
+Under heap we have string pool (every string object will go to the string pool if you are not creating with new keyword);
+
+Stack --> all references will go to stack
+
+Difference between == sign and .equals method
+
+String name=new String("Tech")
+
+String name1="Tech";
+
+String name2="Tech";
+
+String name3=new String("Tech")
+
+== SIGN
+In String if you use the ==sign, it will both references are pointing to same
+memorylocation or not.If they pointing to same memory loaction it will return true.
+
+.equals() METHOD
+It will compare every single value of the string, if they are equals to each other
+
+
+sout(name==name1); // FALSE -> because is not pointing to same location in the memory it will print
+sout(name1==name2); --> it will return TRUE since they are pointing to same object in the memory location
+
+
+sout(name.equals(name1)); --> print TRUE because values are same
+=======
+Day20
+
+int number=12345;
+
+find sum of all digits
+
+NOTE:
+Reminder with 10 it will give you the all the last digit from int value
+Dividing with 10 it will give you all the time one digit less value from your int number
+
+
+Product Value:
+int number=2356;
+First you need find product number of the digits.
+Product Number is equals 2*3*5*6
+You need to find dum of digits 2+3+5+6
+Product Value is equals = ProductNumber-Sum; 180-16
+
+
+sum+=digit; --> compound assignment
+sum=sumdigit; -->
+
+TASK-1
+Createone int array with following value
+3456,2435,765,6776
+
+Create another array and store sum of digits from previous array
+
+18, 14, 18, 26
+
+
+TASK-2
+Create the array with following elements
+"Arslan","Muammer","Tima"
+
+Create another array and store all reversed String to this array.
+
+Sring[] reversed={"nalsrA","remmauM","amiT"};
+
+
+TASK-3
+
+PERFECT NUMBER
+
+6 --> 1+2+3=6
+
+int number=6;
+
+find the number is perfect number or not.
+
+All sum of dividents of the number should be equals to original number.
+
+1--> one for loop and if statement
+
+TASK-4
+
+Create the method will take one parameter as a int number
+This method wil return true if the number is perfect
+Otherwise it willl return false
+
+TASK-5
+
+PRIME NUMBER
+
+The number you can divide only with 1 and the number itself
+
+5,7,13,17,19,...
+
+Create the one int number=13
+If the number is prime print number+" is prime number"
+else print number+" is not prime number"
+
+2,3,4,5,6,7,8,9
+Once you find reminder result should not be 0
+
+TASK-6
+
+[14,23,56,19,21,120]
+
+Create another array store true or false if the number is prime or not
+[false,true,false,true,false,false]
+
+TASK-7
+
+Sort the array without sort method
+
+[1,2,6,8,3,5]
+
+1-use nested Loop your array
+for(int i=0)
+    for(int k=i+1)
+2-and compare the element with next value
+if(k<i)
+3-If the next value is bigger than the first
+4-replace the places swap the values
+
+
+---
+int num=12345;
+reversed=54321;
+
+Sum od digits
+Product value
+
+get the reminder with 10
+divide 10
+
+======
+1-Find sum of digits
+2-Find sum of digits in array and store to new array
+3-Sort the array without sort method
+4-Reverse all string in array
+5-Prime number
+6-Perfect number
+7-Product number
+
+Summary
+NOTE 1: (Question 1,2,7):
+
+If you want to get the digits from the integer value, you need to find remainder with 10
+number%10 --> Will give you the digit
+While(number>0){
+	number%10;
+	number/10;
+}
+
+NOTE 2: (Qeustion-3)
+
+Use nested loop
+create temp int value
+and swap the array elements
+
+NOTE 3:(Qeustion-4)
+for(int i=str.length()-1; i>=0; i--)
+
+NOTE 4 (Qeustion-5,6)
+You need to use for loop to put the if condition while you are checking the number is prime or perfect
+
+Prime number --> which will be able divide only with 1 and the number itself
+Perfect number-->all the sum of dividents for the number must be equals to the original number (6-1+2+3=6)
+
+StringBuilder --> page 111-117
+Array --> 119 - 128
+
+========================================================================
+
+DAY-21
+(object orienting language)
+
+Object [] obj={"String",10.true,10.6};
+
+8 primitive data type we have.
+
+String
+== --> newer use to compare the String object
+It compare in String object you reference are pointing to same object or not.
+
+.equals() method to compare the String
+
+* string is immutable
+
+StringBuilder
+
+1- It is almost same like String
+2- To be able to avoid to create alot of object we need to use StringBuilder
+3- StringBuilder is mutable. It will not create a lot of object once you manipulate the StringBuilder. It will uptade your existing object.
+4- StringBuilder syntax is different than string
+
+How to create StringBuilder Object?
+3 diffrence ways to create StringBuilder object
+1-   StringBuilder stringBuilder1 = new StringBuilder();
+2-   StringBuilder stringBuilder2 = new StringBuilder("Apple");
+3-   StringBuilder stringBuilder3 = new StringBuilder(5); // Capacity
+// This capacity is extentable, if you give more value, it will extent the capacity automatically
+
+
+sout(stringBuilder3); --> 5
+
+StringBuilder builder="Apple"; --> you can not creat
+
+|0 |1 |2 |3 |4 |
+|a |p |p |l |i | c a t i o n
+
+
+String str="a";
+str="ab";
+str="abc";
+
+System.gc();
+
+METHODS IN STRINGBUILDER
+1- Append()
+To store the values in StringBuilder Object we need to use append method.
+There are many different append method
+Append(true)
+Append("Computer")
+Append(10)
+Return type of append method is StringBuilder.
+
+
+Create ten String values "Ahmet" --> only i have one ahmet in String pool
+With StringBuilder create then ahmet --> For every Ahmet you will create new object in memory
+
+If you want to manipulate the String(Char sequences) value, you can use StringBuilder for more
+conveince.
+If you do not want to manipulate the value, you can use String.
+
+After charAt method in String we can not do method chaining because return type of charAt is char
+If you want to chaing the method in String return types must be String.
+trim() --> yes
+indexOf() --> no
+substring --> yes
+
+Method Chaining in StringBuilder
+1- If you want to chain the method return type of method must be StringBuilder
+
+Difference between String and StringBuilder
+1- You do not need create a lot of object in StringBuilder if you want to manipulate the data
+2- Syntax is different to create String and StringBuilder
+3- String is immutable,StringBuilder is mutable
+
+=============================
+
+----------------DAY-22----------------
+
+1-If you want to chaing StringBuilder methods, return type of method must be StringBuilder.
+
+Append()
+charAt()
+indexOf()
+
+If you want to change to value of StringBuilder, return type of the method must be StringBuilder
+
+StringBuilder car=new StringBuilder("Toyata");
+
+car.append(" 2020"); --> return type is StringBuilder
+
+sout(car); --> Toyata 2020
+
+car.substring(0,6) --> 0,1,2,3,4,5 -->
+
+sout(car); --> result will be Toyata 2020 because return type of substring method in StringBuilder is String
+
+boolean result=success.substring(0,4).equalsIgnoreCase("ABCD")==true;
+
+
+Insert() Method
+it will insert the value if the offset  value is present in StringBuilder.
+If you give the offset is more than length of your StringBuilder it will throw the exception
+(StringBuilderIndexOutOfBoundsException)
+
+ABCD-ABCD
+01234567891011121314
+
+success.insert(11,"ABCD"); --> throws and exception
+success.insert(9,"ABCD"); --> this will insert the value to your StringBuilder   ABCD-ABCDABCD --> capacity will change
+
+TASK:
+Create the StringBuilder object with following Value
+
+weird=ASDFKJAGFPW32KEJFQ40NASDEHJGE22KVNDMNAPWRNJFV4307ASDF
+Create another StringBuilder object without any value
+
+StringBuilder result=
+
+Print only letters between D to G
+D-E-F-G
+
+DFG.......F
+
+DELETE() AND DELETECHARAT()
+
+Delete method will delete the given values StringBuilder and return StringBuilder object.
+
+delete(int startIndex, int endIndex); --> delete the chars between given index numbers
+
+deleteCharAt(int indexNum); --> it will delete the char from StringBuilder
+
+REVERSE
+It will reverse your value of StringBuilder and returns StringBuilder
+
+
+
+TASK
+Create one StringBuilder array reverse the values and store inside another array
+
+arr1=Corolla, C300, Acura, Camry, Acoord
+
+arr2= store reversed values from arr1
+
+== How to create String array?==
+String[] str= new String[5];
+String[] str1={"Coralla","Acura",...}
+
+
+==How to create StringBuilder array?==
+StringBuilder [] strBuilder=new StringBuilder [5];
+
+==AFTER THIS LINE==
+StringBuilder cor=new StringBuilder("Corolla");
+StringBuilder ac=new StringBuilder("Acura");
+
+StringBuilder[] StrBld={cor,ac,....}
+
+
+
+Car [] arr=new Car[];
+Person[] arr1=new Person[];
+Computer[] arr2=new Computer[];
+
+
+
+
+TO STRING METHOD
+
+StringBuilder cor=new StringBuilder("Corolla");
+
+String corolla=cor.toString(); --> it will convert to String object
+
+String corolla=cor; --> compile time error.
+
+
+
+Equality in StringBuilder
+
+== --> The references are pointing to same object or not, If they are pointing to same object it will
+return true else it will return false
+
+StringBuilder cor=new StringBuilder("Corolla");
+StringBuilder cor1=new StringBuilder("Corolla");
+
+StringBuilder cor2=cor.append(" 2020");
+
+sout(cor==cor1); --> they are not pointing to same object in the memory, it will print false.
+
+sout(cor==cor2); --> it will return true because cor and cor2 is pointing to same object.
+
+
+===============
+
+.equals()
+NOTE: in StringBuilder we do not have .equals methods.This equals method is coming from Object class.
+If equals method is coming from object class, it will do same process like == sign
+
+StringBuilder cor=new StringBuilder("Corolla");
+StringBuilder cor1=new StringBuilder("Corolla");
+
+sout(cor.equals(cor1)); // this method is coming from object class, that's why we need to implement
+same process like == sign .Result will false since they are not pointing to same object.
+
+NOTE:
+If the equals method is coming from STRING class it will compare the values of object.
+if the equals method is coming from the OBJECT class, it will compare the references are pointing to same object or not.
+
+
+=======
+
+StringBuilder
+charAt
+append
+indexOf
+insert
+substring --> return String
+delete
+deleteCharAt
+toString --> String
+length()
+reverse()
+Equality of StringBuilder
+StringBuilder []
+
+=============================
+
+----------------DAY-23----------------------
+
+StringBuilder ->
+Methods ->
+Constructors, Objects ->
+Arraylist ->
+Static methods, variables
+...
+OOP -> Object oriented programming
+Exceptions ->
+Collections ->
+
+
+String str = "a";
+
+str ="b";
+
+/* Stack is store only references
+
+
+
+
+String --> Is Immutable -> you can not change the created value in memory.
+StringBuilder --> Is Mutable ->  you can  change the value in memory.
+
+== vs .equals();
+
+String
+.equals(); --> is comparing only the values
+== --> is comparing values and pointing objects.
+
+String str  = "a";
+String str2 = "a";
+
+sout(str.equals(str2)); --> true
+
+StringBuilder methods
+
+.append("value");
+.insert(index, "value");
+.delete(startInd, endInd);
+.reverse();
+
+They will change the values StringBuilder and store it to save value.
+
+StringBuilder str = new StringBuilder("My name is  ");
+str.append("David.");
+
+str --> My name is David.
+
+StringBuilder --> String
+using toString method
+
+String --> StringBuilder
+
+StringBuilder str = new StringBuilder(String name);
+
+
+.equals(); --> is comparing only the values
+== --> is comparing values and pointing objects.
+
+String a1 = new String("Hello");
+String a2 = new String("Hello");
+
+sout(a1==a1); --> false // compare objects and value
+sout(a1.equals(a2)); --> true // compare value
+
+StringBuilder a1 = new StringBuilder("Hello");
+StringBuilder a2 = new StringBuilder("Hello");
+
+sout(a1==a1); --> false // compare objects and value
+sout(a1.equals(a2)); --> false // compare value
+
+sout(a1.toString==a1.toString); --> false // compare objects and value
+sout(a1.toString.equals(a2.toString)); --> true // compare value
+
+
+
+
+
+
+METHODS
+==============
+
+Methods will help your code to be clean
+Benefits of method you can reuse same method multiple times
+
+ex:
+Palindrome -> your logic
+Palindrome -> another logic -> some bugs
+
+Civic -> palindrome -> false
+
+civic -> palindrome -> true
+
+--
+
+* In order to avoid this kind of bugs in your code, you should write a method once then reuse it.
+
+String
+.toUppercase();
+.substring();
+.......
+
+
+* Methods will make your life easier.
+
+
+public int[] getUniqueLetter(int [] arr){
+
+}
+
+
+Utility Methods
+
+void -> there is no return value
+Method that has void return type will just do some action (print, change values of some variable, call another) and will not return anything.
+
+String, int, double, boolean, int[], Object, ........... -> these are return types of methods
+
+public String getName(){
+
+	return "David";
+}
+
+public String substring(int start,int end){
+	String name = "Patel";
+	String result = "Pat"
+	......
+	return result;
+}
+
+===============================
+
+DAY24
+
+StringBuilder
+Methods
+constructors
+
+Method Overloading
+================
+
+Method overloading is when we have methods that same method name but different signature, and they are in same class.    (difference parameter)
+Parameters HAVE TO be different
+Return type CAN BE different (optional)
+Access modifier CAN BE different (public-private)
+Compile time polymorphysm --> means it knows which method exactly to execute once we are calling that method.
+
+
+printRandomInt -> name
+printRandomInt() -> signature
+
+public void printRandomInt(){}
+
+private int printRandomInt(int bound){}
+
+numUtils.printRandomInt(10)
+
+
+------softskills-----
+
+Front End --> To test the application, Selenium WebDriver
+Back End --> Database, API calls --> Oracle SQL, RestAssured library
+
+Team Structure will be around 8 people
+
+1 -> product owner --> responsible for business requirements
+1 -> scrum master --> responsible for productivity of team
+4 -> developers --> they are coding building the application
+2 -> testers --> you are testing an application
+
+2 ways
+1--> manual testing
+2--> automation testing -> you can write a code that will test application by itself automatically
+
+Framework -> Java, Selenium......
+
+Arrays is class in Java
+Selenium will provide it is own jar files which have their own classes and methods
+jUnit, Cucumber, TestNG
+
+
+Project
+
+Skype -> eveyone open a skype
+
+Create a skype group
+
+==============================
+
+----------------DAY-25--------------------
+
+-Methos
+-Static methods
+-static variables
+
+-Constructor
+-ArrayList
+-Objects  --> The instance of class, copy of class
+
+Car --> year, model, color
+
+Car class is just a blueprint, template
+
+Car car = new Car(); --> car -> car.year = 2019, car.model = "Camry";
+
+Car car2 = new Car();
+
+car.drive();
+
+******constructor does not have any return type********
+
+
+// Constructor helps us to initialize the instant variables/attributes
+// Staic Variable --> one variable for all objects
+
+----Constructor vs Method
+Constructor doesn't have any return type, while methods have
+Constructor name has to be the same as class name, while method name can be any name.
+
+Constructor purpose is to initialize variables.
+If we don't create ant constructors with parameters then java have no argument constructor by default.
+
+If we have a constructor with arguments then no argument constructor will be removed.
+
+this.  --> It will call instance variables of the same class.
+
+constructors is called when we create an object/instantiation the object.
+(instantiation is create an object.)
+new Student();
+new Student("David");
+
+
+this --> it will call instance variables and method of the same class.
+this() --> it will call constructor of the same class.
+
+Instance block
+static
+
+
+Hackathon game
+==================================
+DAY-26
+
+Constructor
+
+
+Static
+-------
+
+1. Static variables
+2. Instance and static blocks
+3. Static methods
+
+
+Static variables: are belogs to class, and it will share only one copy of that variable
+with all objects.
+Static variables can be called with class name.(Employee.company)
+
+Instance block --> purpose is to initialize or execute some code before executing constructor.
+
+Static block --> purpose is to initialize or execute  some code before executing instance block
+and constructor. And it will be only executed once in the begining once we create our first object.
+
+Static block can only get access to static variables and static methods.
+
+========================
+
+-----------DAY-27--------------
+
+What is static keyword in java? --> interview question
+
+1-Static variables / Class variable
+     It belongs to class and not to an object.
+     We have only one copy of static variable.
+     We can call static variables with class name
+
+2-Instance Block and Static Block.
+     Instance Block --> We can only initialize instance variables, it will execute each time we create an object
+     Static Block --> We can initialize the static variables. And it will run in the beginning and only once when we create an object
+
+3- Static methods
+    Static methods calls Static method        --> Yes
+    Static method calls non-static methods    --> No
+    non-Static method calls static method     --> Yes
+    non-Static method calls non-static method --> Yes
+
+
+Where we can use static methods --> Utility classes.
+
+Static methods  can be called with class name from different classes. (AmozonUtils.navigate("URL"))
+-----
+Selenium --> We will test front end of Application
+
+navigate(String URL);
+login(String username, String password);
+search(String item);
+
+login("sysadmin", "admin"); --> hardcoding
+login("sysadmin", "admin"); --> hardcoding
+login("sysadmin", "admin"); --> hardcoding
+
+we will store these credentials in seperate file/Java class.
+
+class TestData(){
+	static String username = "sysadmin";
+    static String password = "mypassword";
+}
+
+login(TestData.username, TestData.password); --> hardcoding
+login(TestData.username, TestData.password); --> hardcoding
+login(TestData.username, TestData.password); --> hardcoding
+-------
+
+Lets say you are taesting the search functionality of amazon application
+
+'search functionality'
+
+Positive scenario
+1. Navigate
+2. login
+3. Search for 'Carpet'
+4. Results are all carpet
+
+
+Negative scenario
+1. Navigate
+2. login
+3. we will enter 25 wods (20 words limit)
+4. should only accept 20 words.
+
+
+Applications are not testable 100% with Automation
+
+My application is testable for around 80%.
+20% is done with manual testing.
+---------------
+
+
+Wrapper classes.
+
+Wrapper classes are objects for primitive data types.
+
+primitive variables are not Object -> we don't have any int class in our java library, java developed primitives
+seperately, because most applications use a lot of numbers in order for java to avoid to create an object (to occupy memory)
+java primitives are developed the performance of application will be faster.
+
+int number = new int();
+
+primitives -> numerical values of java.
+
+Arrayslist doesn't accept primitives
+
+Wrapper classes
+
+byte -> Byte
+short -> Short
+char -> Character
+int  -> Integer
+double -> Double
+long -> Long
+float -> Float
+boolean -> Boolean
+
+
+-----
+
+Static variable -> one copy for all object
+Static methods -> it is mostly used for utility methods, in order to avoid creation of object
+Static block -> which will initialize static variables once we careate an object
+
+Wrapper classes -> each primitive data type corresponds to wrapper class object.
+
+ArrayList -> This is the as an array, which we can store multiple values inside of that list.
+
+What is the difference between array and arraylist
+
+===========================
+
+---------Day 28---------------
+
+Difference 1:
+
+Array -> fixed size -> new String[5] -> {2,6,3} -> size is not changeable
+
+Arraylist -> resizable -> you can add many values as you want. -> Java will uptade the size of arraylist by itself.
+
+Difference 2:
+
+Array -> can have primitive data types and objects-> int[] values = new int[5];
+
+Object -> String, StringBuilder, Object, Employee, Job, Double, Integer, Boolean
+
+Wrapper classes are objects.
+
+Arraylist -> can store only objects -> it doesn't store primitives.
+
+Difference 3:
+
+Array -> doesn't have too much methods.
+Arraylist -> has very useful methods.
+
+Arraylist methods
+
+.add(value) -> adding value
+.get(index) -> to get the value
+.set(index,value) -> updating value
+.contains(value) -> this method will check if that value is in the list
+.remove(value/index) -> it is removing the value under that index
+.isEmpty() -> it is checking if there are no values in list
+.clear() -> it is removing all values from list
+Collections.sort(list) -> it is sorting a list.
+
+ArrayList<String> -> in diamond brackets we will specify the object type.
+
+-----
+list.add("hello");
+list.remove(0);
+
+list2.add(2);
+list2.add(0);
+
+list2.remove(0);
+-----
+
+
+========================
+
+Day-29
+
+ArrayList methods
+
+
+----
+.list.removeAll(list2) -> removing from list values all list2 values
+.list.containsAll(list2) -> it is checking if list values has list2 values.
+
+.list.remove(value) -> it will remove value object from list
+.list.contains(value) -> it is checking if value object is in list
+
+add(index, value) -> it will insert the value to specified index
+.remove(value) -> it will return the boolean
+
+list.subList(beginIndex, endIndex) -> it will work same as String substring() method
+list.addAll(list2) -> it will and all values from list2 to list
+
+=========
+
+Encapsulation -> is hiding the data with private access modifier and giving access to those data with getters and setters
+
+
+OOP -> Inheritance, Abstraction, Interface, Polymorphysm
+Exception
+Date
+Enums
+
+
+===============================
+
+---------Day-30-----------
+
+Encapsulation -> This is one concept of OOP
+
+HR Application
+
+Employee
+   firstName
+   lastName
+   employeeId
+   department
+        departmentId
+        departmentName
+        location
+            locationCountry
+            locationState
+            locationCity
+
+    job
+       title
+       jobId
+       salary
+
+Functions
+
+Data
+
+========================
+-------Day-31-------
+
+Collections
+    LinkedList
+    Vector
+    Set
+    HashSet
+    Map
+Date
+Enums
+OOP
+Exceptions
+
+Basic HTML -> Hypertext MarkUp language
+Selenium
+TestNG
+JUnit
+Cucumber
+SQL
+Oracle SQL
+JDBC
+API
+Jenkins
+Docker station
+Appium
+Parallel Testing Selenium grid'
+
+
+
+Data  ==>> Reading data from csv files
+CSV -->> Coma Seperated Values
+
+=================================
+-----Day-32--------
+
+
+
+This() --> we user this() constructor to call constructor in same class
+This --> to be able to call the variables or method in same class we can use this keyword
+
+
+
+------
+public void sing(String key,String... harmonies) -- > true
+public void sing(String... key,String... harmonies) -- > false
+public void sing(String... key,String harmonies) -- > false
+public void sing(String key,String... harmonies, int music) -- > false
+
+1- Varargs in parameter must be at the end of your order
+2- We can ONLY use one varargs parameter
+-----
+
+Method Overloading
+1- Method name must same be but different parameter
+2- Return type is not important for method  overloading. It can be different return type as well.
+    Changing the return type does not make method overloaded
+3- Changing access modifier does not make method overloaded
+
+NOTES:
+1- You can increase or decrease the number of parameter
+2- You can change order of parameters
+public Integer sum(int num1, int num2){
+
+}
+public Integer sum(int num1){
+
+}
+private Integer sum(int num1, String num2){
+
+}
+private Integer sum(String num1, int num2){
+
+}
+Pass By Value and Pass By Reference
+NOTE:
+Java is working with Pass by Value
+Once you pass the value to your parameter, java will get the Copy of your reference, then it will not change your original value.
+However if you are working with Array, java will get original value. It means it is working with pass by reference in Array.
+NOTE: In pass by value your original reference point will not change, however in pass by reference it will change your reference point.
+
+----
+array is mutable - sort array
+
+Pass by Value and Pass by Reference
+-----
+
+Note:
+In java method name can start with dollar sign($), underscore or letter
+And also we can use $ sign and underscore anywhere in your method name.
+WE can not use other signs anywhere in our method name(* 6 %)
+We can not start with number however we can end with number
+-----
+
+Return type in method must be right before method name
+
+public void numberOfChickes(){
+
+}
+
+public static void....
+static public void....
+static final public void....
+final static public void....
+
+NOTES: before retun type order is not important.
+ ----
+ NOTE:
+ Return type is short
+
+ If you want to return any data type which is bigger than short,you need to
+ explicitly cast data type to short
+
+Since short is bigger than the byte, you do not need to explicitly cast since java will cast it implicility
+
+  public short type(){
+        Integer value = new Integer(3);
+        return (short)value;
+  }
+
+  public short type(){
+
+        return new Byte((byte)6);
+  }
+
+AutoBoxing
+UnBoxing
+Casting
+-------
+
+sendHome(Phone p, int newInt){
+	p=new Phone(4);
+	p.size=10;
+}
+
+This method will not change the size of given parameter since java is working with pass by value.
+Copy of the object will be passed to the method.
+
+--------
+Static method
+1- Inside static method we can only call static method
+2- Inside static method we can only call static variables
+
+Non-Static method
+1- Inside non-static method we can call static and non-static methods
+2- We can call static and non-static variables
+
+This keyword
+To be  able to call the variables and method from same class we can use this keyword
+this.water(); --> using this keyword I am calling the method
+
+This() constructor
+To be able to call the constructor inside another block of code we need to use
+this() in same class.
+
+-------
+public static void call(int num, String str1, String... data){
+
+}
+
+call(10,"first", "m","j","i","a","a"........)
+
+
+// this will give us compile error. Varargs must be at the end of your parameter order.
+public static void call(int num, String str1, String... data){
+
+}
+
+call(10,  "m","j","i","a","a"........., "first")
+-------
+
+========
+
+DATE and TIME --> Java API
+
+API --> application Programming Interface
+
+Rest Api (helps us to get data from database) --> UI
+
+Rest Api returns "03-10-2020T04:34:13" --> "03/10/2020"
+
+"03-10-2020T04:34:13".equals("03/10/2020"); // false
+
+TASK:
+Create the method will take one parameter with this format "03-10-2020T04:34:13"
+This method will return String with following format "MM/dd/yyyy"
+03/10/2020
+
+"04-25-2020T04:34:13"
+
+"04/25/2020"
+
+==================
+
+Now() Method
+In these three classes LocalTime, LocalDate and LocalDateTime to be able to get the java
+current Time
+
+***** every class is constructor********
+
+Date and Time Methods
+
+For LocalDate  we can only use year, month, weeks, day method. We can not use time method
+For LocalTime we can only use hour, min, sec, nanosec methods. We can not use date method
+
+==============
+LocalTime, LocalDate and LocalDateTime
+
+now() --> it will return current time,date or dateTime
+
+For those object you can not create object using new keyword because constructors
+are private in those classes.
+
+Of method implementation, we are providing our own date, time or dateTime
+
+Plus/Minus LocalTime, LocalDate and LocalDateTime --->> those methods are immutable.Unless until you reassign the values your original value will not change.
+
+
+ -------
+Java is working with Pass By Value, method will get copy of your value.
+Array is working with Pass by reference, method will get original value.
+-------
+
+Date Classes are coming from java Time package
+To use those classes we need to import
+
+Plus and Minus Methods
+Static Polymorhism --> Method overloading(compile time)
+Dynamic Polymorhism --> method overriding
+
+Chaining method is possible for LocalDate and Time and DateTime
+
+but Period we can not do method chaining. If you use it will get last chained method.
+
+isBefore and isAfter methods to compare the date
+
+
+Period period = Period.odDays() / ofMonths/ofWeeks/ofYear
+Period period = Period.of(1,4,6);
+
+====================
+------------Day34------------
+
+Period Class will work with date and LocalDateTime Class In period we can not give time
+
+ofDays
+ofWeeks
+ofMonth
+ofYear
+of(1,4,15);
+
+HOW TO FORMAT DATE-TIME IN JAVA?
+We have built in format in Java to use them.
+
+Date and Time Format Documentation In Java
+
+HOW TO CONVERT STRING TO Date Classes?
+.parse method to convert to from String to Date object
+
+"2020-04-29"  ---> convert ---> Date Object
+We need to use parse method
+
+"10:08"  ---> convert ----> Time Object
+
+If you are not defining the pattern, you need to give the String with default
+structure of your relavent Object
+
+
+DateTimeFormatter to structure of Date objects
+=========================
+------Day-35----------
+
+Warm-up Task
+
+Create the String has value of"06/30/2018-10:01"
+Convert the String to dateTime Object
+After that create following strructure 30-06-18 % 10-01
+
+
+--------------
+SET
+1- You can only store unique value inside the Set
+2- We can only store objects to set
+3- Set is interface, we can not instantiate the set.
+
+3 different implementation
+HashSet, LinkedHashSet, TreeSet
+
+ArrayList arr= new ArrayList();--->  4,2,7,8
+
+arr.add(4);
+arr.add(2);
+arr.add(7);
+arr.add(8);
+Sout(arr): 4,2,7,8 --> ArrayList follow insertion order
+Collections.sort(arr); --> arrayList
+Arrays.sort(arrayValue); --> array
+
+HashSet
+NOTE: HashSet is one of the implementation of Set collection.
+Hashing --> "tech" --> m96at1p
+1- HashSet is not ordered
+4,2,7,8 --> 4,2,7,8 0r 7,8,4,2 or ...........
+2- Value saved with Hashing.
+3- HashSet allows null value
+4- You can only store unique value
+5- HashSet is Class( is not interface)
+6 - HashSet is not Synchronized ( ArrayList is also Synchronized)
+
+HOW TO CREATE SET USING HASHSET?
+
+1- using set
+
+Set<Integer> numbers = new HashSet();
+                       new HashSet<>();
+                       new HashSet<Integer>();
+
+2- Using HashSet
+
+HashSet<Integer> numbers = new HashSet<>();
+
+CAN NOT DO WE CAN NOT INSTANTINATE INTERFACE --->  Set<Integer> numbers = new Set<>();
+                                                   List<Integer> numbers = new List<>();
+
+
+What is the difference between ArrayList and Set?
+1- *ArrayList we can store duplicate values
+   *Set we can not store duplicate values must be unique
+2- Syntax is different to create ArrayList and Set is difference.
+3- ArrayList follows the insertion order
+   Set does not follow the order
+
+
+          // All of them is same
+        List<String> num1=new ArrayList<>();
+        List<String> num2=new ArrayList();
+        List<String> num3=new ArrayList<String>();
+        ArrayList<String> num4=new ArrayList<String>();
+        ArrayList<String> num5=new ArrayList();
+        ArrayList<String> num6=new ArrayList<String>();
+        ArrayList num7=new ArrayList();
+        List num8=new ArrayList();
+
+
+==========================
+Iterator is helps us to iterate over your elements in Collection.
+
+Set<Integer> ages = new HashSet<Integer>();
+ages.add(25);
+ages.add(34);
+ages.add(47);
+ages.add(18);
+
+NOTE: We can loop two ways over the age collection.
+
+1- Use forEach loop
+2- iterator()  ---> return type of this method is Iterator object
+
+Iterator<Integer> it = ages.iterator();
+hasNext(); --> it will return true if the element has next value;
+next(); --> it will go to next element
+
+while(it.hasNext()){
+	Sout(it.next());
+}
+
+
+
+/*
+        Math and Computer class
+        0      5
+        mathStudent.removeAll(computerStudents); 5
+        mathStudent.clear() == 0
+         */
+        // Interface you can create with interface keyword
+        // Class with class keyword
+        // OOP
+        // you can not instantiate the object from interface
+        // but you can instantiate the object from class using new keyword
+
+=======================
+
+-------Day-36----------
+
+
+
+
+//Task
+Create one method takes String value and this method print all unique letter from String
+=============
+LINKEDHASSET
+1- It is class
+2- Only unique values
+3- It is not syncoronized
+4*-LinkedHashSet follows insertion order (like arrayList)
+
+How to create LinkedHashSet?
+Set<String> countries = new LinkedHashSet<>();
+LinkedHashSet<String> countries = new LinkedHashSet<>();
+LinkedHashSet countries = new LinkedHashSet(); --- >> Java will understand data type is Object.
+
+
+TASK
+Create one method, it takes one parameter as Integer Array and from this it will convert This method will return linkedHashSet collection.
+
+TREESET
+1- We can store only unique values
+2- It does not allow null value
+3- It is not syncronized
+4- It follows ascending order
+
+String -- Alphabetical order
+a,b,c,d,..........,z
+
+Integer --> 0..... infinite
+
+
+================
+1- How to convert ArrayList to HashSet?
+2- How to convert HashSet to ArrayList?
+3- Arrays.asList(arrayName);
+4- LinkedHashSet
+     a- implemantation of set
+     b- it is class
+     c- it follows the insertion order
+     d- allow null value
+     e- It has all the method
+
+====------=====
+HashSet<String> books=new HashSet();
+HashSet books=new HashSet();
+Set <String> books=new HashSet();
+--> Left side will decide which methods to call. It means I can call the method from Set class.
+--> Right side will decide the implementation
+Set is an interface. We can not instantiate the object from interfaces.
+HashSet is a class. We can create an object from HashSet using new keyword.
+1- We can only store unique values.
+Add() --> It will first check in my set I have this value or not, if I don't have it will store new value.
+2- HashSet does not follow any order.
+3- We don't get method
+4- ForEach loop or Iterator
+5- Inside HashSet we can only store Objects
+============================
+HashSet Methods
+1- Add()
+2- contains(Object);
+3- isEmpty();
+4- clear(); --> it will delete everything in your HashSet
+5- remove(Object) --> it will delete the one object
+6- removeAll(Collection) ---> it will remove all collections provided in parameter
+7- iterator() --> Return type is Iterator object, Iterator helps us to loop to your Set.
+Create new project
+Create one class called Practice with main method
+
+// TASK
+Create one method takes String value and this method prints all unique letter from String.
+TECTORIAL AC
+=================================================
+LINKEDHASHSET
+1- It is class
+2- Only unique values
+3- It is not syncronized
+4- LinkedHashSet follows insertion order
+How to create LinkedHashSet?
+Set<String> countries=new LinkedHashSet<>();
+LinkedHashSet <String> countries=new LinkedHashSet<>();
+LinkedHashSet countries=new LinkedHashSet();---> Java will understand data type is Object.
+
+Task
+Create one method, it takes one parameter as Integer Array and from this it will convert to LinkedHashSet and This method will return linkedHashSet collection.
+
+TREESET
+1- We can store only unique values
+2- It does not allow null value
+3- It is not syncronized
+4- It follows ascending order
+String -- Alphabetical order
+a,b,c,d.....z
+Integer --> 0 .... infinitie
+======================================
+1- How to convert ArrayList to HashSet?
+2- How to convert HashSet to ArrayList?
+3- Arrays.asList(arrayName);
+4- LinkedHashSet
+    a- implementation of set
+    b- it is class
+    c- it follows the insertion order
+    d- allow null value
+    e- It has all the method which Set has because those method are coming from Set interface
+5- TreeSet
+    a- It follows ascending order
+    b- Does not allow null value
+    c- Method are coming from TreeSet class
+        * first()
+        * last()
+        * pollFirst();
+        * pollLast();
+        * DescendingSet()
+        * iterator()
+        * descendingIterator();
+Set<String> set=new TreeSet();
+1-> methods will come from left side
+2-> implementation belongs to TreeSet
+
+===================
+--------Day-37---------
+
+MAP ---> one of the collection type of java
+
+1- It is one of the collection in java
+2- It is interface, we can not instantiate the map using new keyword.
+3- HashMap, LinkedHashMap, TreeMap
+4- Map is working with key and value
+
+
+key                        Value
+"12345M98F830L"  ---->>    "COROLLA"    ---> It will enter the key give me the corolla
+"65445M98F124K"  ---->>    "CAMRY"
+null             ---->>    null
+"84945M98F134K"  ----->    null
+
+
+
+- Key is connected the value
+Sout(KEY); --> COROLLA
+
+*All collection types can be interview questions
+
+
+Map mp = new Map(); --->> we can not create the map like in this example. Right side of this object can not be new Map();
+
+HASHMAP
+1- HashMap is not ordered collection
+2- HashMap is allow one null key and multiple null values.
+3- Keys must be uniqe values. When you try to store different value with same key,
+map will uptade your previous value.
+4- HashMap is class.
+5- We can store duplicate values.
+6- we can only store the object.
+
+How we can create HashMap?
+
+        key    value
+HashMap<String,String> carMap = new HashMap();
+HashMap<String,String> carMap = new HashMap<>();
+HashMap<String,String> carMap = new HashMap<String,String>();
+
+Map<Integer,String> studentId=new HashMap<Integer,String>();
+
+HashMap<Integer,Object>
+
+HashMap<Boolean,Long>
+
+
+PUT METHOD
+It takes two parameter key and value.
+
+carMap.put("12345M98F830L","Camry");
+
+
+studentId.put(1,"David");
+studentId.put(2,"Furkan");
+
+HashMap, LinkedHashMap, TreeMap, HashTable
+
+How to instantiate HashMap?
+Difference between Set and Map?
+
+put
+get
+keySet
+remove
+
+========================
+------------DAY-38----------
+
+Map<String,String>
+
+put()
+get()
+keySet() --> Set<String>  --> return type
+remove(key)        --->> remove the entry from map --> return type is String
+remove(key,value)  --->> remove the entry from map  -->> return type is boolean
+replace(key,value) --->> it  will replace old value with new value
+value  matching with key.
+
+containsValue(Value) -->> if provided value is exist in your map, method will return true, otherwise return false
+containsKey(Key)     -->> if provided key is exist in your map, method will return true, otherwise return false
+
+values() --> return collection object with all values of map.
+EntrySet() --->> Set of key and value from your map. --->>
+                 Set<Entry<Integer.String>>
+                 Entry has own method getKey() and getValue.
+
+clear() and removeAll(Map<Integer,String>)
+1- removeAll method takes parameter and remove the values of parameter
+2- clear method will remove all the value without any condition from your map
+
+
+Methods In MAP
+put()
+get()
+remove()
+keySet() --> Set
+values() --> Collection<>
+containsKey()
+containsValue()
+replace()
+EntrySet()
+Size()
+clear()
+isEmpty()
+
+
+--LinkedHashMap--
+
+1- It follows the insertion order
+2- It has all the method which HashMap has
+3- It is not syncronized.
+4- It is working with key and value.
+5- It has except one null key and multiple null values
+
+LinkedHashMap<Boolean,String> linked = new LinkedHashMap<>();
+Map<String,Integer> map = new LinkedHashMap();
+
+--TreeMap--
+1- It follows the ascending order according to key
+2- It has all the method which HashMap has
+3- It is working with key and value.
+4- It doesn't accept null key and acept multiple(one) null value
+If you try to put null key it will throws the exception.
+5-  It is not syncronized.
+
+HashTable
+1- It works with key and value
+2- It is syncronized.
+3- Hashtable contains unique elements.
+4- Hashtable can not have null key or value.
+5- There is not order.
+
+
+=============mentoring=============
+Date Time Notes
+
+LocaleDate.now()
+LocalTime.now()
+import java.time.*
+LocaleDate date = LocalDate.now()
+.of()
+LocalDate date1 = LocalDate.of(2015,04,09)
+sout(date1)
+== 2015-04-09
+sYears/minusYears date
+plusMonths/minusMonths date
+plu
+plusWeeks/minusWeeks date
+plusDays/minusDays date
+plusHours/minusHours time (LocalTime)
+plusMinutes/minusMinutes time
+plusSeconds/minusSeconds time
+plusNanos/minusNanos time
+LocalDate date = LocalDate.of(2020,04,18);
+sout(date.minusHours(15); // this will give compile time error in this line
+ If you try to use date methods for localtime object it will give compile time error in that line
+ Period
+After 40 we will finish the quarantine days
+Period period = Period.ofDays(40)
+P40D
+Period weeks = Period.ofWeeeks(3)
+sout(weeks) java automaticaly converting to days (P21D)
+Period fullDate = Period.of(1,6,20); first one is year second one is month third one is days
+P1Y6M20D
+sout(Period.ofYears(2).ofMonths(6).ofDays(1));
+You cannot chain the period methods . It will always take the last method.
+DateTimeFormatters are predefined formats in Java
+Using those formats we change our date format
+ISO_LOCAL_DATE
+DateTimeFormatter format = DateTimeFormatter.BASIC_ISO_DATE(year,month,day)
+DateTimeFormatter format1 = DateTimeFormatter.BASIC_ISO_DATE(localTime.now);
+sout(dateFormat.format(LocalDate.now))
+sout(format1.format(LocalTime.now()))
+// code thwows run time exception
+Using ISO_LOCAL_TIME how can you format current time ?
+OfPattern method
+We can format our date and time with our own patterns
+DateTimeFormatter formatter = DateTimeFOrmatter.ofPattern(MMMM , dd , yyy , hh:mm))
+MMMM for months full name APRIL
+MM it will give you number your month with zero ->04
+M it will omit the zero ->4
+MMM short version of month name APR
+for months it must be big
+YYYY , yyyy 4 numbver of year
+YYY , yyy 4 number of year
+YY , yy  last two digits of year 20
+DD dd 09 two digit of day always
+d it will omit the zero 9
+hh it will give  two digits of hour always 03
+h it will omit the zero 3
+mm it will always give two digits of minute
+m it will omit the zero
+
+===========================
+----------DAY-39-----------
+
+OOP -->> Object Oriented Programming Language
+All classes in java is Object.
+
+Concepts:
+
+Encapsulation
+Inheritance
+Abstraction
+     Abstract class
+     Interface
+Polymorphysm
+
+Programming Language Structures:
+OOP, Procederal Programming Languages, Functional Programming languages
+
+OOP languages
+Java
+Python
+C#
+C++
+JavaScript
+
+OOP --> Object (OOP comes from Object)
+
+Inheritance
+
+Super Class = Parent class  //  we can't extend new class
+Sub cass = Child class
+
+
+super is calling parent classes variable and methods
+super() is calling parent class's constructor
+
+this is calling current class's variables and method
+this() is calling current class's constructor.
+
+-- We can inherit only one class
+
+By default in class we have:
+1. extends Object
+2. no-arguments constructor if no other constructor is defined
+3. Any constructor will call super class's no-argument constructor by default. (super())
+
+
+Access Modifier:
+public -->> public variables and methods can be accessed from anywhere(different packages) in the same project.
+
+protect -->> protected variables and methods can be accessed from same package AND they can be accessed from a SUB-CLASS in different package.
+
+default (package-private) -->> default variables and methods can be only within the same package.
+
+private -->> private variables and methods can be accessed only within the same class.
+
+
+Bus extends Vehicle -> What variables and methods are inherited in Bus(Sub-class) class?
+
+- Private variables and methods are never inherited.
+- Public variables and methods are all inherited.
+- Protected variables and methods are inherited in same or different package sub classes.
+- Default variables and methods are inherited in same package sub-classes.
+
+Method Overriding:
+-------------------
+-> When we declaring same method(same signature) in sub-classes and giving different body implemantation is named as method overriding.
+
+-> Method signature has to be same.
+-> Access modifier can be same or more accessible.
+-> Return type can be same or Covariant(Same class or sub-class of that return type)
+-> In order to make sure that we are overriding a method we use @Override annotation.
+
+-> Static methods and variables has nothing to do with  Inheritance, as they belong to the class.
+-> Static methods can not be overriden, but they can be hidden.
+
+
+Abstraction:
+-------------
+
+1. Abstract class can not be instantiated.
+2. Abstract class can have zero or any number of abstract and non-abstract methods.
+3. Abstract class can not be defined private of final
+4. Abstract class that extends another abstract class inherits all it is abstract and non-abstract methods.
+
+
+/** -- OOP --
+Inheritance
+Abstraction
+  Abstract Class
+  Interface
+Polymorphism
+Encapsulation
+**/
+
+Abstract Methods:
+-----------------
+ can not have body
+
+final keyword:
+
+final variables (constants) -> has to be instantiated once and can not be reassigned
+final method -> can not be overridden
+final class -> can not be extented
+
+We can not have final abstract class or interface in java.
+We can mark final only regular class
+
+Interface
+----------
+
+All interface variables are public, static, and finaly by default. -- >> constants
+
+3 types of methods
+Nondefault method -> by default they are public abstract
+Default -> which marked as 'default' and has public access modifiers, it is regular method.
+static method -> marked as 'static' and has public access modifier, it is regular static method.
+
+Absract Class vs Interface
+--------------------------
+
+Interface support multiple inheritance, while we can inherit only one abstract class
+Interface doesn't have constructor, while abstract class has a constructor.
+Interface variables are all public static final by default, while in abstract variables are regular.
+Interface methods are public abstract by default, while in abstract class we have to define with abstract keyword
+
+Interface we use 'extends' keyword to inherit another interface, while abstract class uses
+'implements' keyword to inherit another interface.
+
+Interface -> Interface -> extends
+
+abstract class/regular class -> interface -> implements
+
+
+
+Why we need final classes?
+
+String -> immutable
+
+
+------------------------
+
+How to reach immutable class/object?
+
+-> (mark) final class
+-> making variables private and final.
+-> giving getters methods, but nor setters.
+
+
+
+--main purpose of final is to reach to immutable object--
+
+
+**
+Polymorphic object is an object that can take many types of references (Super classes)
+**
+
+
+
+
+dynamic polymorphism happens in jvm
+
+static happens as we are typing the code
+
+---
+What is the difference between is the Dynamic Polymorphic and Static Polymorphysm
+                                     * calls the method          * calls the method
+                                       during runtime              during compile time
+                                     * method Overriding         * Method Overloading
+                                     * slow                      * Fast
+
+
+===============================================
+----Day43----
+
+Exceptions:
+
+Is an event that occur once smtg went wrong with code.
+
+Throw an exception -> creating an exception object -> handling to JVM
+
+Errors -> out of memory, classnotfound
+
+
+Exceptions -> Checked and Unchecked exceptions
+
+Unchecked exceptions -> runtime exception -> ArithmeticExceptions, NullPointerExceotions, ArrayIndexOfBoundException...
+
+Checked Exceptions -> IOexception, FileNotFoundException, MalformedURLException, InterruptedException...
+
+---------
+
+Handling the Exception
+
+try catch finaly -> once exception caught the execution of code will continue.
+
+try{
+	1
+	2
+	3
+	System.exit{0}
+}catch{(Exception e){
+      sout(e);
+      System.exit(0);
+
+}catch(Throwabla e){
+
+}finally{
+
+}
+
+
+
+Declaring in method signature ->
+
+public void method() throws Exception {}
+
+public void method2() throws Exception{
+	method();
+}
+
+
+================
+
+throw -> is used to throw an exception object.
+
+throw new Exception();
+
+implicitely and explicitely:
+
+implicitely -> automatically
+
+explicitely -> manually
+
+==============
+
+How to create our own exceptions?
+
+The class has to extend any Exception class and declare the constructors, in that case your class is going to be exception class.
+
+Exceptions in method overriding:
+
+       if method has exception declared then once we override that method we have an option to declare or not declare an exception.
+
+       If we choose to declare it then it has to be same exception ou sub-class of that exception which is declared in original method
+
+Declaring exceptionin method signature:
+
+       The method that calls exception declared method that method also has to handle that declared exception.
+
+
+========
+
+Enumaration
+ENUMS ->special data type which constains constants (public static final variables).
+
+
+it can implements interface
+
+
+
+
+OCA -> Oracle Certified Associate
+OCP -> Oracle Certified Proffesional
+OCM -> Oracle Certified Master
+
+Android Application -> Java needed
+Back End Development -> SpringBoot framework,Django framework...
+Fron End Development -> JavaScript, Angular JS 8, ReactJS(HTML,  )
+
+Jython -> Combination of java and phyton
+
+Kotlin ->
+
+SQL -> Structure Query Language -> programming Language.
+
+Selenium
+
+HTML -> HyperTest Markup Language programming language
+
+Java,SQL,HTML
+-------------
+
+HTML
+Selenium -> Another jar files to your project
+TestNG -> Another jar files to your project
+JUnit -> Another jar files to your project
+Excel file -> Apache Poi
+
+Cucumber -> Another jar files to your project
+SQL -> prog. language
+JDBC -> Java Database Connectivity
+API -> Application Programming Interface
+RestAssured -> Another jar files to your project
+Appium -> Mobile application
+
+Jenkins -> Program
+ParallelTesting ->
+Docker
+AWS -> Create virtual machines, create database
+
+JIRA, ALM, Monday -> Project management tool
+
+----------
+
+
+Full Stack SDET -> Software Development Engineer in Tesr
+
+QA -> Quality Assurance
+
+Cucumber -> Gherkin language -> it is good for non technical people.
+
+
+SDET
+Sr. SDET
+
+Tech Lead
+==================
+
+2 weeks -> Starts on wednesday and end ends on tuesday , monday -> friday
+
+
+Wednesday -> Stand Up Meeting ->
+Sprint Planning Meeting -> What user stories to work on?
+Estimation of your user story -> Fibonacci system -> 0,1,1,2,3,5,8,13,21 -> S,M,L
+
+
+1,2,3 -> user stories
+
+1->5 points
+2->5 points
+
+
+9 -> points
+
+-------------------
+
+Analyze User store
+
+SME -> Subject Matter Expert -> Pharmacists
+
+
+Atlassian
+JIRA
+Confluence pages
+
+User Story -> Jira -> link for confluence page
+
+------------
+
+Write test cases / Test Scenarious
+
+1. Test login functionality with valid credentials
+    a.Navigate to application
+    b.Click on login button
+    c.provide valid credentials
+    d.Validate that you logged in
+
+2. Test login functionality with valid credentials
+    a.Navigate to application
+    b.Click on login button
+    c.provide valid credentials
+    d.validate error message given in login page
+
+-------------
+
+Test Case Review Meeting:
+
+Product Owners / Business Analyst
+
+------------
+
+Execute test cases Manually
+
+--------
+
+Make sure it is a bug
+
+Reprodeuce your bug...
+
+----------
+
+Automation code
+
+-----------
+
+Tuesday -> last day of your sprint
+Sprint Demo meeting...
+
+---------
+
+Sprint Retrospective meeting...
+
+
+

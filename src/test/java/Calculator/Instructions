@@ -1,0 +1,26 @@
+Steps:
+	
+	1. Complete the Range class assignments
+	2. Complete RandomNumber assignments
+	3. Go over Question abstract class and understand it is methods and variables. (You don't need to do anything in there)
+	4. Addition, Subtraction, Multiplication, Division classes inherits Question class
+		a. In each above mentioned class inherit Question abstract class
+		b. Create a constructor in each class that accepts an object of Range type:
+			1. Call super constructor and pass values to questionType, operator
+			2. Using RandomNumber class static methods generate two numbers within the min and max range of
+			Range object
+			3. Assign generated values to operand1, operand2 instance variables
+			4. In Subtraction and Division classes the operand1 shouldn't be smaller than operand2 
+			(make sure operand1 is always greater than operand2.)
+		c. Override calc method:
+			1. set calculated to true
+			2. set result of calculation to answer instance variable
+		d. Override toString method:
+			1. if result is not calculated it will return in format: 24+44=
+			2. if result is calculated it will return in format: 10+5=15
+	5. Run CalculatorTest class
+	6. Run Tests class
+	
+	
+	
+	

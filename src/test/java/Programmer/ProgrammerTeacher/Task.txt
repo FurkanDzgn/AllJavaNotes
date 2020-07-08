@@ -1,0 +1,36 @@
+In Programmer class add below two public methods: 
+
+	1. List<String> getLanguages() -> will return all languages that programmer knows.
+	2. void addLanguage(String language) -> will add a new language to the list of languages that programmer knows.
+
+ProgrammerTeacher class has to inherit Programmer class and override methods and will have one additional public method.
+
+	1. boolean teach(Programmer programmer, String language) -> this method will check if programmer knows the language. 
+	If programmer does not know and teacher knows language then teacher teaches and method returns true. 
+	If both do not know that language or programmer knows the language then returns false.
+	2. Override getLanguages() and addLanguage(String language) methods for teacher. And have separate list for teacher languages.
+
+For example below code shows how ProgrammerTecher teaches a new language to Programmer:
+
+	ProgrammerTeacher teacher = new ProgrammerTeacher();
+	teacher.addLanguage("Java");
+	
+	Programmer programmer = new Programmer();
+	teacher.teach(programmer, "Java"); -> will return true as programmer does not know this language and will add to the list of languages of Programmer.
+	
+		// This for loop should print only Java
+		for(String language: programmer.getLanguages()){
+		     System.out.println(language);
+		}
+		
+		Output: 
+		      Java
+		 
+		 
+		      
+------ ONCE DONE RUN Tests class to test
+
+
+
+
+		      
