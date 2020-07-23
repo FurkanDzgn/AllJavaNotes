@@ -25,7 +25,7 @@ public class str {
 		System.out.println(x.substring(a+1,b));
 		System.out.println(x.substring(b));
 		
-		System.out.println(x.repeat(2));
+//		System.out.println(x.repeat(2));
 	    String y="Chicago is better NewYork";
 		System.out.println(y.replace("Chicago","NewYork"));
 		System.out.println(x.trim());

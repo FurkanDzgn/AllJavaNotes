@@ -36,8 +36,8 @@ public class SBMethods07 {
 		StringBuilder stb2 = new StringBuilder("Computer");
 		StringBuilder stb3 = new StringBuilder("Laptop");
 		
-		System.out.println(stb1.compareTo(stb2)); // 0 --> same
-		System.out.println(stb1.compareTo(stb3)); // negative number --> different
+//		System.out.println(stb1.compareTo(stb2)); // 0 --> same
+//		System.out.println(stb1.compareTo(stb3)); // negative number --> different
 		
 		
 		
