@@ -1,0 +1,4 @@
+--------------- Alert types: ----------------------
+1. HTML -> find element and execute it
+2. javascript -> alert handle
+3. operating system -> robot class, can't be handled by selenium
